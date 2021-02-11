@@ -11,7 +11,7 @@ public class Greeter {
     }
 
     private String calculateSalutation(String greeting) {
-        if (greeting == null) {
+        if (null == greeting) {
             return DEFAULT;
         }
         return greeting;
