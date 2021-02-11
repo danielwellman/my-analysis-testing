@@ -19,7 +19,7 @@ public class Greeter {
     }
 
     private int age(String greeting, String name) {
-        return 6;
+        return 7;
     }
 
     private String calculateSalutation(String greeting) {
