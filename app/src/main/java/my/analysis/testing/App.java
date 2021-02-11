@@ -28,7 +28,8 @@ public class App {
         if ("Oops".equals(greeting)) {
             return "Error!";
         } else if ("Manager".equals(name)) {
-            return greeter.greet("sudo " + greeting, name);
+            String formalGreeting = "sudo " + greeting;
+            return greeter.greet(formalGreeting, name);
         }
         return greeter.greet(greeting, name);
     }
