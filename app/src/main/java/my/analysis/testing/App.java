@@ -8,17 +8,18 @@ import java.io.PrintStream;
 public class App {
 
     private final PrintStream stream;
+    private final Greeter greeter = new Greeter();
 
     public App(PrintStream out) {
         stream = out;
     }
 
     public void greet() {
-        stream.println(getGreeting("Hello", "World"));
+        stream.println(greeter.getGreeting("Hello", "World"));
     }
 
     public String getGreeting(String greeting, final String name) {
-        return greeting + " " + name + "!";
+        return greeter.getGreeting(greeting, name);
     }
 
     public static void main(String[] args) {
