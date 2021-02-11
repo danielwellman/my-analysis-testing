@@ -14,11 +14,11 @@ public class App {
     }
 
     public void greet() {
-        stream.println(getGreeting("Hello", "World"));
+        stream.println(getGreeting("Hello", "World", "?", "#", "!?"));
     }
 
-    public String getGreeting(String greeting, final String name) {
-        return greeting + " " + name + "!";
+    public String getGreeting(String greeting, final String name, String extra1, String extra2, String extra3) {
+        return greeting + " " + name + "!" + extra1 + extra2 + extra3;
     }
 
     public static void main(String[] args) {
