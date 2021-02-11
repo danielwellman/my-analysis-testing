@@ -6,7 +6,11 @@ public class Greeter {
     private final String defaultSalutation;
 
     public Greeter() {
-        this.defaultSalutation = DEFAULT;
+        this(DEFAULT);
+    }
+
+    public Greeter(String defaultSalutation) {
+        this.defaultSalutation = defaultSalutation;
     }
 
     public String greet(String greeting, final String name) {
