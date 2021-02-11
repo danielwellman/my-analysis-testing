@@ -2,6 +2,7 @@ package my.analysis.testing;
 
 public class Greeter {
     private static final String DEFAULT = "Aloha";
+    private final String defaultSalutation;
 
     public Greeter() {
     }
