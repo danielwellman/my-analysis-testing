@@ -14,7 +14,7 @@ public class Greeter {
     }
 
     public String greet(String greeting, final String name) {
-        int age = age(greeting, name) + age(name, greeting);
+        int age = age(greeting, name) - age(name, greeting);
         return calculateSalutation(greeting) + " " + name + "!";
     }
 
