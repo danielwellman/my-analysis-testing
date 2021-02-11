@@ -10,6 +10,10 @@ public class App {
     private final PrintStream stream;
     private final Greeter greeter;
 
+    public App() {
+        this(System.out);
+    }
+
     public App(PrintStream out) {
         stream = out;
         greeter = new Greeter();
