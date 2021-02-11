@@ -7,8 +7,7 @@ public class Greeter {
     }
 
     public String getGreeting(String greeting, final String name) {
-        greeting = calculateSalutation(greeting);
-        return greeting + " " + name + "!";
+        return calculateSalutation(greeting) + " " + name + "!";
     }
 
     private String calculateSalutation(String greeting) {
