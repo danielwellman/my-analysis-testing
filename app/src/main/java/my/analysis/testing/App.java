@@ -25,7 +25,7 @@ public class App {
     }
 
     public String getGreeting(String greeting, final String name) {
-        if (greeting.equals("Oops")) {
+        if ("Oops".equals(greeting)) {
             return "Error!";
         } else if (name.equals("Manager")) {
             return greeter.greet("sudo Hello", name);
