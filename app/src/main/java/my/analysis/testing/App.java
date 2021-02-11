@@ -3,16 +3,25 @@
  */
 package my.analysis.testing;
 
+import java.io.PrintStream;
+
 public class App {
 
-    public void greet() {
-        System.out.println(getGreeting());
+    private final PrintStream stream;
+
+    public App(PrintStream out) {
+        stream = out;
     }
+
+    public void greet() {
+        stream.println(getGreeting());
+    }
+
     public String getGreeting() {
         return "Hello World!";
     }
 
     public static void main(String[] args) {
-        new App().greet();
+        new App(System.out).greet();
     }
 }
