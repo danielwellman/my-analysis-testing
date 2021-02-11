@@ -7,7 +7,7 @@ public class Greeter {
     }
 
     public String getGreeting(String greeting, final String name) {
-        if (null == greeting) {
+        if (greeting == null) {
             greeting = DEFAULT;
         }
         return greeting + " " + name + "!";
