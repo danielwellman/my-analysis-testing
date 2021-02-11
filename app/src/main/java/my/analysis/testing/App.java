@@ -20,12 +20,12 @@ public class App {
     }
 
     public void greet() {
-        String greeting = greeter.getGreeting("Hello", "World");
+        String greeting = greeter.greet("Hello", "World");
         stream.println(greeting);
     }
 
     public String getGreeting(String greeting, final String name) {
-        return greeter.getGreeting(greeting, name);
+        return greeter.greet(greeting, name);
     }
 
     public static void main(String[] args) {
