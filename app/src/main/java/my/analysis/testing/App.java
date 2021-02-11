@@ -8,10 +8,11 @@ import java.io.PrintStream;
 public class App {
 
     private final PrintStream stream;
-    private final Greeter greeter = new Greeter();
+    private final Greeter greeter;
 
     public App(PrintStream out) {
         stream = out;
+        greeter = new Greeter();
     }
 
     public void greet() {
