@@ -20,7 +20,8 @@ public class App {
     }
 
     public void greet() {
-        stream.println(greeter.getGreeting("Hello", "World"));
+        String greeting = greeter.getGreeting("Hello", "World");
+        stream.println(greeting);
     }
 
     public String getGreeting(String greeting, final String name) {
