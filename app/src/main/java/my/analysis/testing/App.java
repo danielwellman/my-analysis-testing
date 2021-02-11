@@ -20,7 +20,7 @@ public class App {
     }
 
     public void greet() {
-        String greeting = greeter.greet("Hello", "World");
+        String greeting = greeter.greet("Hello", "World", " ", "!", "BAD NEWS");
         stream.println(greeting);
     }
 
@@ -29,9 +29,9 @@ public class App {
             return "Error!";
         } else if ("Manager".equals(name)) {
             String importantGreeting = "sudo " + greeting;
-            return greeter.greet(importantGreeting, name);
+            return greeter.greet(importantGreeting, name, " ", "!", "BAD NEWS");
         }
-        return greeter.greet(greeting, name);
+        return greeter.greet(greeting, name, " ", "!", "BAD NEWS");
     }
 
     public static void main(String[] args) {

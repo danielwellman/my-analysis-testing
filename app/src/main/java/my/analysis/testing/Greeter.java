@@ -13,8 +13,8 @@ public class Greeter {
         this.defaultSalutation = defaultSalutation;
     }
 
-    public String greet(String greeting, final String name) {
-        return calculateSalutation(greeting) + " " + name + "!";
+    public String greet(String greeting, final String name, String space, String ending, String unusedBad) {
+        return calculateSalutation(greeting) + space + name + ending;
     }
 
     private String calculateSalutation(String greeting) {
