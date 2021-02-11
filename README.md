@@ -1,2 +1,2 @@
 # analysis-testing
-Same for evaluating repository changes
+Sample for evaluating repository changes
