@@ -1,5 +1,5 @@
 #include <stdio.h>
-int f(){return 97;} 
+int f(){return 98;} 
 int main(int argc, char *argv[])
 {
 }// Add Comment
