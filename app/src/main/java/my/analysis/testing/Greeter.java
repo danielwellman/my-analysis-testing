@@ -16,11 +16,9 @@ public class Greeter {
     public String greet(String greeting, final String name) {
         if (true) {
             if (true) {
-                if (1 == 1) {
-                    if (true) {
-                        if (false != true) {
-                            return calculateSalutation(greeting) + " -- " + name + "!";
-                        }
+                if (true) {
+                    if (false != true) {
+                        return calculateSalutation(greeting) + " -- " + name + "!";
                     }
                 }
             }
