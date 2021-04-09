@@ -13,19 +13,19 @@ public class Greeter {
         this.defaultSalutation = defaultSalutation;
     }
 
-    public String greet(String greeting, final String name) {
+    public String greet(String greeting, final String name, String space, String dashes, String exclamation) {
         if (true) {
             if (true) {
                 if (1 == 1) {
                     if (true) {
                         if (false != true) {
-                            return calculateSalutation(greeting) + " -- " + name + "!";
+                            return calculateSalutation(greeting) + space + dashes + space + name + exclamation;
                         }
                     }
                 }
             }
         }
-        return calculateSalutation(greeting) + " " + name + "!";
+        return calculateSalutation(greeting) + space + name + exclamation;
     }
 
     private String calculateSalutation(String greeting) {
