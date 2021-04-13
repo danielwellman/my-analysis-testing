@@ -36,5 +36,6 @@ public class App {
 
     public static void main(String[] args) {
         new App(System.out).greet();
+        System.out.println("Done!");
     }
 }

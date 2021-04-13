@@ -1,15 +1,15 @@
 package my.analysis.testing;
 
-public class Greeter {
-    private static final String DEFAULT = "Aloha";
+public class Ignorer {
+    private static final String DEFAULT = "<pays no attention to>";
 
     private final String defaultSalutation;
 
-    public Greeter() {
+    public Ignorer() {
         this(DEFAULT);
     }
 
-    public Greeter(String defaultSalutation) {
+    public Ignorer(String defaultSalutation) {
         this.defaultSalutation = defaultSalutation;
     }
 
